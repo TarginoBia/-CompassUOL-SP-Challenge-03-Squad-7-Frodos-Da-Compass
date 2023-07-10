@@ -1,0 +1,10 @@
+CREATE TABLE tabela_product (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    date DATE NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    imgURL VARCHAR(255) NOT NULL,
+    price FLOAT NOT NULL,
+    category_id INT,
+    FOREIGN KEY (category_id) REFERENCES tabela_category(id)
+);

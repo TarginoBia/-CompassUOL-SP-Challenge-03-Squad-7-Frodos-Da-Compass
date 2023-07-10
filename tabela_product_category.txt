@@ -1,0 +1,7 @@
+CREATE TABLE tabela_product_category (
+    product_id INT,
+    category_id INT,
+    PRIMARY KEY (product_id, category_id),
+    FOREIGN KEY (product_id) REFERENCES tabela_product(id),
+    FOREIGN KEY (category_id) REFERENCES tabela_category(id)
+);
